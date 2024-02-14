@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:text="Convertidor"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="232dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:hint="Celsius"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etF"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/etC"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:ems="10"
+        android:hint="Fahrenheit"
+        android:inputType="numberDecimal" />
+    |
+
+    <Button
+        android:id="@+id/btnGC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etK"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="#792188"
+        android:text="°C" />
+
+    <Button
+        android:id="@+id/btnGF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etK"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="300dp"
+        android:layout_toEndOf="@+id/btnGC"
+        android:backgroundTint="#792188"
+        android:text="°F" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="67dp"
+        android:gravity="center"
+        android:text="C°"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:text="F°"
+        android:textSize="20sp" />
+
+</RelativeLayout>
